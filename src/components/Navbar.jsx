@@ -1,7 +1,10 @@
 import { BsBagHeartFill } from "react-icons/bs";
 import Link from "next/link";
+import { useCart } from "@/data/CartContext";
 
 export default function Navbar() {
+  const { state } = useCart();
+
   return (
     <nav className="flex items-center justify-between flex-row w-full bg-red-500 p-4 sticky top-0">
       <div className=" lg:hidden  ">
@@ -22,15 +25,15 @@ export default function Navbar() {
         </span>
       </div>
 
-      <div className=" flex-grow lg:flex lg:items-center lg:w-auto lg:text-center md:hidden">
+      <div className=" flex-grow lg:flex lg:items-center lg:w-auto lg:text-center hidden">
         <div className="text-lg font-bold lg:flex-grow flex gap-4 justify-center">
-          <Link href="#" className="text-red-200 hover:text-white">
+          <Link href="#" className="text-white hover:text-white">
             Home
           </Link>
-          <Link href="#" className="text-red-200 hover:text-white">
+          <Link href="#" className="text-white hover:text-white">
             Shop
           </Link>
-          <Link href="#" className="text-red-200 hover:text-white">
+          <Link href="#" className="text-white hover:text-white">
             Contact
           </Link>
         </div>
@@ -39,7 +42,11 @@ export default function Navbar() {
         <div className=" text-3xl pr-3 cursor-pointer text-white ">
           <BsBagHeartFill />
         </div>
-        <span className="absolute top-1 right-0 bg-white rounded-full w-4 h-5 text-sm text-center">0</span>
+        {state.cart.length ? (
+          <span className="absolute top-1 right-0 bg-white rounded-full w-4 h-5 text-sm text-center">
+            {state.cart.length}
+          </span>
+        ):(<></>)}
       </div>
     </nav>
   );

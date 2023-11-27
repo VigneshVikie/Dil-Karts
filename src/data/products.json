@@ -1,61 +1,136 @@
 [
-    {
-      "id": 1,
-      "name": "Camera",
-      "price": 200.99,
-      "image": "/assets/camera.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "id": 2,
-      "name": "Iphone",
-      "price": 2999.99,
-      "image": "/assets/iphone.jpg",
-      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      "id": 3,
-      "name": "HeadPhones",
-      "price": 10.99,
-      "image": "/assets/headphone.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "id": 4,
-      "name": "Drone",
-      "price": 1669.99,
-      "image": "/assets/drone.jpg",
-      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      "id": 5,
-      "name": "IWatch",
-      "price": 159.99,
-      "image": "/assets/iwatch.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "id": 6,
-      "name": "Joystick",
-      "price": 19.99,
-      "image": "/assets/joystick.jpg",
-      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-    ,
-    {
-      "id": 7,
-      "name": "Keyboard",
-      "price": 39.99,
-      "image": "/assets/keyboard.jpg",
-      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-    ,
-    {
-      "id": 8,
-      "name": "Laptop",
-      "price": 1499.99,
-      "image": "/assets/laptop.jpg",
-      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-    
-  ]
+  {
+    "id": 1,
+    "name": "Camera",
+    "price": 200.99,
+    "rating": 4.8,
+    "image": "/assets/camera.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "specifications": [
+      "Resolution: 20 MP",
+      "Zoom: 5x optical zoom",
+      "Video: 4K recording",
+      "Sensor Type: CMOS",
+      "ISO Range: 100-25600",
+      "Lens: 24-120mm f/3.5-5.6",
+      "Viewfinder: Electronic viewfinder (EVF)",
+      "Continuous Shooting: 10 frames per second"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Iphone",
+    "price": 2999.99,
+    "rating": 4.8,
+    "image": "/assets/iphone.jpg",
+    "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "specifications": [
+      "Display: 6.1-inch Super Retina XDR display",
+      "Processor: A15 Bionic chip",
+      "Storage: 128GB",
+      "Camera: Dual 12MP Ultra Wide and Wide cameras",
+      "Face ID: Enabled",
+      "Battery Life: Up to 22 hours talk time"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Headphones",
+    "price": 10.99,
+    "rating": 4.5,
+    "image": "/assets/headphone.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "specifications": [
+      "Type: Over-ear",
+      "Driver Size: 40mm",
+      "Frequency Response: 20Hz - 20kHz",
+      "Impedance: 32 ohms",
+      "Sensitivity: 105dB",
+      "Cable Length: 1.2 meters",
+      "Connector: 3.5mm audio jack"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Drone",
+    "price": 1669.99,
+    "rating": 4.7,
+    "image": "/assets/drone.jpg",
+    "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "specifications": [
+      "Flight Time: Up to 30 minutes",
+      "Camera: 20MP 4K UHD",
+      "Max Speed: 44.7 mph",
+      "Max Range: 4.3 miles",
+      "GPS: Yes",
+      "Obstacle Avoidance: Yes",
+      "Weight: 1.35 kg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "IWatch",
+    "price": 159.99,
+    "rating": 4.3,
+    "image": "/assets/iwatch.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "specifications": [
+      "Display: 1.57 inches OLED",
+      "Compatibility: iOS and Android",
+      "Sensors: Heart rate, Accelerometer, Gyroscope",
+      "Water Resistance: Up to 50 meters",
+      "Battery Life: Up to 18 hours",
+      "Connectivity: Bluetooth, Wi-Fi, GPS"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Joystick",
+    "price": 19.99,
+    "rating": 4.9,
+    "image": "/assets/joystick.jpg",
+    "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "specifications": [
+      "Compatibility: PC, Xbox, PlayStation",
+      "Buttons: 12 programmable buttons",
+      "Connection: USB",
+      "Vibration: Dual motor vibration",
+      "Cable Length: 2 meters",
+      "Weight: 300 grams"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Keyboard",
+    "price": 39.99,
+    "rating": 4.5,
+    "image": "/assets/keyboard.jpg",
+    "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "specifications": [
+      "Type: Mechanical",
+      "Switches: Cherry MX Blue",
+      "Backlight: RGB",
+      "Key Rollover: N-key rollover",
+      "Construction: Aluminum top plate",
+      "Cable: Braided, detachable",
+      "Layout: Full-size"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Laptop",
+    "price": 1499.99,
+    "rating": 4.8,
+    "image": "/assets/laptop.jpg",
+    "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "specifications": [
+      "Processor: Intel Core i7-10th Gen",
+      "RAM: 16GB DDR4",
+      "Storage: 512GB SSD",
+      "Display: 15.6 inches FHD",
+      "Graphics: NVIDIA GeForce GTX 1660 Ti",
+      "Battery: 6-cell, 70Wh",
+      "Weight: 4.5 pounds"
+    ]
+  }
+]

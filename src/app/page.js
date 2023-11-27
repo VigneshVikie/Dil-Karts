@@ -2,7 +2,7 @@
 import Hero from "@/components/Hero";
 import { useState, useEffect } from "react";
 import products from "../data/products";
-import ItemListing from "@/components/ItemListing";
+import { CartProvider } from "@/data/CartContext";
 
 export default function Home() {
   const [data, setData] = useState(null);
@@ -15,13 +15,12 @@ export default function Home() {
         console.error(error);
       }
     }
-    console.log("datafetched");
     fetchData();
   }, [products]);
 
   return (
-    <>
+    <CartProvider>
       <Hero data={data} />
-    </>
+    </CartProvider>
   );
 }
