@@ -1,0 +1,61 @@
+[
+    {
+      "id": 1,
+      "name": "Camera",
+      "price": 200.99,
+      "image": "/assets/camera.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 2,
+      "name": "Iphone",
+      "price": 2999.99,
+      "image": "/assets/iphone.jpg",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 3,
+      "name": "HeadPhones",
+      "price": 10.99,
+      "image": "/assets/headphone.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 4,
+      "name": "Drone",
+      "price": 1669.99,
+      "image": "/assets/drone.jpg",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": 5,
+      "name": "IWatch",
+      "price": 159.99,
+      "image": "/assets/iwatch.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 6,
+      "name": "Joystick",
+      "price": 19.99,
+      "image": "/assets/joystick.jpg",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+    ,
+    {
+      "id": 7,
+      "name": "Keyboard",
+      "price": 39.99,
+      "image": "/assets/keyboard.jpg",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+    ,
+    {
+      "id": 8,
+      "name": "Laptop",
+      "price": 1499.99,
+      "image": "/assets/laptop.jpg",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+    
+  ]
