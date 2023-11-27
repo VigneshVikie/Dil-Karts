@@ -8,7 +8,7 @@ export default function Hero({data}) {
   return (
     <div>
      <Navbar cartItemCount={state.cart.length}/>
-     <ItemListing data={data}/>
+     <ItemListing/>
     </div>
   );
 }

@@ -1,8 +1,11 @@
 import { useCart } from "@/data/CartContext";
 import Link from "next/link";
+import products from "../data/products";
 
-export default function productListing({ data }) {
+
+export default function productListing() {
   const { dispatch } = useCart();
+  const data = products
 
   const addToCart = (product) => {
     dispatch({ type: "ADD_TO_CART", payload: product });

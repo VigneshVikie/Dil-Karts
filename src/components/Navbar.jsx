@@ -38,16 +38,20 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
-      <div className="relative">
-        <div className=" text-3xl pr-3 cursor-pointer text-white ">
-          <BsBagHeartFill />
+      <Link href="/cart">
+        <div className="relative">
+          <div className=" text-3xl pr-3 cursor-pointer text-white ">
+            <BsBagHeartFill />
+          </div>
+          {state.cart.length ? (
+            <span className="absolute top-1 right-0 bg-white rounded-full w-4 h-5 text-sm text-center">
+              {state.cart.length}
+            </span>
+          ) : (
+            <></>
+          )}
         </div>
-        {state.cart.length ? (
-          <span className="absolute top-1 right-0 bg-white rounded-full w-4 h-5 text-sm text-center">
-            {state.cart.length}
-          </span>
-        ):(<></>)}
-      </div>
+      </Link>
     </nav>
   );
 }
