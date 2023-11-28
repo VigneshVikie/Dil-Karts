@@ -6,7 +6,7 @@ export default function Navbar() {
   const { cartState } = useCart();
 
   return (
-    <nav className="flex items-center justify-between flex-row w-full bg-red-500 p-4 sticky top-0">
+    <nav className="flex items-center justify-between flex-row w-full bg-red-500 p-4 sticky top-0 z-10 ">
       <div className=" lg:hidden  ">
         <button className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white">
           <svg
