@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useCart } from "@/data/CartContext";
 
 export default function Navbar() {
-  const { state } = useCart();
+  const { cartState } = useCart();
 
   return (
     <nav className="flex items-center justify-between flex-row w-full bg-red-500 p-4 sticky top-0">
@@ -43,9 +43,9 @@ export default function Navbar() {
           <div className=" text-3xl pr-3 cursor-pointer text-white ">
             <BsBagHeartFill />
           </div>
-          {state.cart.length ? (
+          {cartState.cart.length ? (
             <span className="absolute top-1 right-0 bg-white rounded-full w-4 h-5 text-sm text-center">
-              {state.cart.length}
+              {cartState.cart.length}
             </span>
           ) : (
             <></>
