@@ -15,6 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <head>
+    <link rel="icon" href="https://dilfoods.in/wp-content/uploads/2023/04/cropped-Dil-Foods-new-logo-32x32.png" sizes="32x32" />
+    </head>
       <body className={title.className}>
         <CartProvider>{children}</CartProvider>
       </body>
